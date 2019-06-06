@@ -34,6 +34,44 @@ $(function () {
             block: "start"
         })
     });
+
+    // $('#h-carousel').owlCarousel({
+    //     loop: true,
+    //     margin: 10,
+    //     responsiveClass: true,
+    //     responsive: {
+    //         0: {
+    //             items: 1,
+    //             nav: true,
+    //         },
+    //         300: {
+    //             items: 1,
+    //             nav: false,
+    //             autoplay: true,
+    //             mouseDrag:true,
+    //             autoplayTimeout: 3000,
+    //             autoplaySpeed: 2000,
+    //         },
+    //         1000: {
+    //             items: 3,
+    //             nav: false,
+    //             mouseDrag:true,
+    //             loop: true,
+    //             autoplay: true,
+    //             autoplayTimeout: 3000,
+    //             autoplaySpeed: 2000,
+    //         }
+    //     }
+    // });
+    $("#h-carousel").owlCarousel({
+        items: 3,
+        singleItem: false,
+        // margin:10,
+        itemsScaleUp : true,
+        slideSpeed: 500,
+        autoPlay: 5000,
+        stopOnHover: true
+      });
 })
 
 
